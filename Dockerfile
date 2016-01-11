@@ -1,3 +1,3 @@
 FROM ubuntu
 RUN apt-get update
-RUN apt-get install texlive-full
+RUN apt-get install -y texlive-full
