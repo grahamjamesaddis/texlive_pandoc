@@ -1,3 +1,3 @@
 FROM ubuntu
 RUN apt-get update
-RUN apt-get install -y texlive-full make imagemagick inkscape
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y texlive-full make imagemagick inkscape latexmk
