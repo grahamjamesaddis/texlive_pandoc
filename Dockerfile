@@ -6,8 +6,8 @@ MAINTAINER Graham.Addis@ndm.ox.ac.uk
 
 # Caveat: I reserve the right to change the packages at will, this is a work in progress.
 
-RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
+RUN apt-get update \
+ && DEBIAN_FRONTEND=noninteractive apt-get install -y \
         texlive-full \
         make \
         imagemagick \
@@ -15,4 +15,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
         latexmk \
         locales \
         aspell \
-        pandoc
+        pandoc \
+        pandoc-citeproc \
+        python-pip \
+   && pip install pandocfilters
