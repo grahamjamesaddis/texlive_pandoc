@@ -18,4 +18,5 @@ RUN apt-get update \
         pandoc \
         pandoc-citeproc \
         python-pip \
-   && pip install pandocfilters
+   && pip install pandocfilters \
+   && pip install pandoc-fignos
